@@ -1,0 +1,11 @@
+import hashlib
+
+# Take user input
+message = input("Enter the text: ")
+
+# Encode and compute SHA-512 hash
+digest = hashlib.sha512(message.encode()).hexdigest()
+
+# Display result
+print("\nSHA-512 Message Digest:")
+print(digest)
